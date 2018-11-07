@@ -1,6 +1,10 @@
 // Wait to to attach handlebars until DOM loaded
 $(function() {
+<<<<<<< HEAD
   $(".change-consumed").on("click", function(event) {
+=======
+  $("#change-consumed").on("click", function(event) {
+>>>>>>> deb2291ba9e84d4d6a6948058e0888d6565dbb02
     var id = $(this).data("id");
     var newconsumed = $(this).data("newconsumed");
 
@@ -32,15 +36,23 @@ $(function() {
       data: newshake
     }).then(
       function() {
+<<<<<<< HEAD
         console.log("Created new shake");
+=======
+        console.log("created new shake");
+>>>>>>> deb2291ba9e84d4d6a6948058e0888d6565dbb02
         location.reload();
       }
     );
   });
 
 // Delete shake  
+<<<<<<< HEAD
   $(".delete-shake").on("click", function(event) { 
     window.test = this;
+=======
+  $("#delete-shake").on("click", function(event) {
+>>>>>>> deb2291ba9e84d4d6a6948058e0888d6565dbb02
     var id = $(this).data("id");
 
     $.ajax("/api/shakes/" + id, {
